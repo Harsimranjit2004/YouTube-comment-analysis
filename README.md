@@ -1,57 +1,58 @@
-youtube-comment-analysis
-==============================
+# YouTube Comment Analysis 📊
 
-A project that fetch the youtube comments and then do the sentiment analyis on top of that
+A project to fetch comments from YouTube videos and perform sentiment analysis to extract insights about audience engagement and opinions.
 
-Project Organization
-------------
+---
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+## 🚀 Features
 
+- Automatically fetch YouTube video comments
+- Clean, process, and organize the comment data
+- Perform sentiment analysis on collected comments
+- Generate reports and visualizations to summarize results
 
---------
+---
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+## 🗂️ Project Structure
+
+```text
+├── LICENSE                <- License information
+├── Makefile               <- Automation commands like `make data` or `make train`
+├── README.md              <- Project overview and setup instructions
+
+├── data
+│   ├── external           <- Data from third-party sources
+│   ├── interim            <- Intermediate transformed data
+│   ├── processed          <- Final datasets ready for modeling
+│   └── raw                <- Raw, unmodified data dumps
+
+├── docs                   <- Project documentation (Sphinx)
+
+├── models                 <- Trained models, serialized outputs, and predictions
+
+├── notebooks              <- Jupyter notebooks for exploration
+│   └── 1.0-xyz-description.ipynb
+
+├── references             <- Manuals, data dictionaries, and supporting documents
+
+├── reports
+│   ├── figures            <- Generated visualizations and graphics
+│   └── summaries          <- Final reports in PDF, HTML, etc.
+
+├── requirements.txt       <- Project dependencies
+
+├── setup.py               <- Makes the project installable with `pip install -e .`
+
+├── src                    <- Source code
+│   ├── __init__.py        <- Marks `src` as a Python module
+│   ├── data               <- Scripts for data acquisition and processing
+│   │   └── make_dataset.py
+│   ├── features           <- Feature engineering scripts
+│   │   └── build_features.py
+│   ├── models             <- Scripts to train and predict with models
+│   │   ├── train_model.py
+│   │   └── predict_model.py
+│   └── visualization      <- Scripts for creating visualizations
+│       └── visualize.py
+
+└── tox.ini                <- Configuration for testing with Tox
